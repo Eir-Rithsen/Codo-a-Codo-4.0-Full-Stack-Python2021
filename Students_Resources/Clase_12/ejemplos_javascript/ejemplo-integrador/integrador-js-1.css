@@ -1,0 +1,13 @@
+*{
+    font-family: Verdana;
+}
+h1{
+    background: skyblue;
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+span{
+    font-weight: bold;
+    color: blueviolet;
+}
