@@ -1,0 +1,44 @@
+.container {
+    background: steelblue;
+    display: flex;
+    flex-direction: row;
+    /* column-gap: 20px; */
+    row-gap: 20px;
+    width: 200px;
+    height: 200px;
+    /* flex-wrap: wrap;    */
+    /* justify-content:space-evenly; */
+    align-items: flex-end;
+}
+
+.item {
+    background: grey;
+    border: 1px solid black;
+    margin: 1px;
+    width: 50px;
+    height: 50px;
+}
+/* 
+.item-1 {
+    order: 6;
+    
+}
+
+.alejandro {
+    order: 0;
+}
+
+.item-2 {
+    order: 5;
+}
+
+.item-3 {
+    order: 4;
+    
+} */
+
+
+.item-2 {
+    align-self: flex-start;
+}
+
