@@ -1,0 +1,60 @@
+body {
+    background-color: lightblue;
+    color: black;
+    font-size: 20px;
+    font-family: Verdana;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+input {
+    border-radius: 20px;
+    border-color: blue;
+}
+
+a {
+    color: blue;
+    background-color: lightblue;
+    text-decoration: none;
+    border-radius: 5px;
+    border: white solid 1px;
+    padding: 5px;
+}
+
+header {
+    background-color: blue;
+}
+
+footer {
+    background-color: blue;
+    text-align: center;
+    color: white;
+    padding: 15px 0px;
+}
+
+.formulario {
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 25px;
+    margin: 10px 450px;
+    color: blue;
+    font-weight: bold;
+}
+
+nav {
+    text-align: center;
+}
+
+#boton{
+    text-align: right;
+    font-weight: bold;
+}
+
+#requerido{
+    font-size: 75%;
+    font-weight: normal;
+    font-style: italic;
+}
