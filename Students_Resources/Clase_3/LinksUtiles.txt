@@ -1,0 +1,2 @@
+SEO (Optimización de Motores de Búsqueda): https://developers.google.com/search/docs?hl=es
+Netlify (Ver links en pdf de tutoriales): https://app.netlify.com/drop
