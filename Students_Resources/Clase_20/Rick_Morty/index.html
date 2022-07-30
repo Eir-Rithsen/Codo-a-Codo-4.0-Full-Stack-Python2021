@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h1>Rick and Morty:</h1>
+    <div id="app">
+        <button @click="irAnterior()">Anterior</button>
+        <!--   <button @click=" fetchData({{anterior}} .....)">Anterior</button>-->
+        <button @click="irSiguiente()" @keyup.right="irSiguiente()">Siguiente</button><br>
+        <div class="d-flex flex-wrap justify-content-center ">
+            <div v-for="personaje in personajes" class="  padding: 5px card m-3" style="width: 200px;">
+                <img :src="personaje.image" class="card-img-top" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title"> {{personaje.name}} </h4>
+                    <p class="card-text">ID: {{personaje.id}}</p>
+                    <p class="card-text">Estado: {{personaje.status}}</p>
+                    <p class="card-text">Género:{{personaje.gender}} </p>
+                    <p class="card-text"> Creado: {{personaje.created.substr(0,10)}}</p>
+                    <p class="card-text">Especie: {{personaje.species}} </p>
+                    <!--  <p class="card-text">Origen: {{personaje.origin.name}} </p>-->
+                    <!-- <p class="card-text">Tipo: "{{personaje.type}}" </p>-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
